@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # Kanye-Weather
 
 ## Description:
@@ -20,5 +17,5 @@ SO I can remain safe by being aware of incoming bad weather.
 - Amara Briquelet 
 - Mark Homchik
 
+
 ## Wireframe:
->>>>>>> 5d0bd4d356953c8204df0ef70d08de49ca560bd3
