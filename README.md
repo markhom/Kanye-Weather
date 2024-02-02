@@ -15,6 +15,8 @@ So I can remain safe by being aware of incoming bad weather.
 
 ## Contributors:
 - Amara Briquelet 
+- Mark Homchik
+
 
 ## Wireframe:
 
