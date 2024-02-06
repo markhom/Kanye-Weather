@@ -14,7 +14,8 @@ AS A resident of city X I would like to have a weather app that reminds me to ch
 So I can remain safe by being aware of incoming bad weather.
 
 ## Contributors:
-- Amara Briquelet 
+- Amara Briquelet
+- Pedro Felipe Valencia 
 
 ## Wireframe:
 
