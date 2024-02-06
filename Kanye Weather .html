@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <title>Kanye Weather</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+
+        #weatherApp {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero.is-primary {
+            background-color: #FF0000; /* Red from Donda album */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="weatherApp">
+        <section class="hero is-primary is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                        Kanye's Weather App
+                    </h1>
+                    <h2 class="subtitle">
+                        Proactive Weather Awareness for Kanye Fans
+                    </h2>
+
+                    <!-- Display Kanye quote -->
+                    <blockquote class="content">
+                        "I'm like a vessel, and God has chosen me to be the voice and the connector."
+                    </blockquote>
+
+                    <!-- Weather information -->
+                    <div class="columns">
+                        <div class="column is-half is-offset-one-quarter">
+                            <div class="box">
+                                <!-- Display weather information here -->
+                                <p>Temperature: 25°C</p>
+                                <p>Conditions: Sunny</p>
+                                <p>Wind Speed: 10 km/h</p>
+                                <!-- Add more weather data as needed -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button to refresh weather -->
+                    <button class="button is-info" id="refreshButton">
+                        Refresh Weather
+                    </button>
+
+                    <!-- Bulma form for location input -->
+                    <div class="field">
+                        <label class="label" for="locationInput">Enter Your Location:</label>
+                        <div class="control">
+                            <input class="input" type="text" id="locationInput" placeholder="E.g., City, Country">
+                        </div>
+                    </div>
+
+                    <!-- Button to find location -->
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary" id="findLocationButton">
+                                Find My Location
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Add your JavaScript for weather data retrieval and other functionality here -->
+    <script>
+        // Example: You would use JavaScript to fetch weather data from an API and update the UI
+        document.getElementById('refreshButton').addEventListener('click', function() {
+            // Placeholder for fetching weather data and updating UI
+            alert('Fetching weather data...');
+        });
+
+        // Example: You would use JavaScript to handle location finding functionality
+        document.getElementById('findLocationButton').addEventListener('click', function() {
+            // Placeholder for finding location
+            alert('Finding your location...');
+        });
+    </script>
+
+</body>
+</html>
