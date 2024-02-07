@@ -15,7 +15,7 @@ fetch(url) //request quotes from server
 }
 //function to retrieve user coordinates
  function getLocation() {
-    let userLocate = navigator.geolocation.watchPosition(
+     navigator.geolocation.getCurrentPosition( //changed to getCurrentPosition to avoid violating api rules for how many requests can be made (not more than one per second) 
         successCall, //success condition
         errorCall, //error only here so I can include the high accuracy object. 
         {
@@ -29,17 +29,17 @@ fetch(url) //request quotes from server
 let latitude = position.coords.latitude;
 let longitude = position.coords.longitude;
 
-//Nearest city based on coords
-fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
+//Nearest city based on coords.
+fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`) //when the users lat and long are successfully retrieved they are used as variables here.
     .then(response => response.json())
     .then(data => {
         let closestCity = data.address.city;
-        console.log(closestCity);
+        console.log(closestCity); //check console for city name.
     })
  }
 
  function errorCall(error) {
-
+console.log("error in getLocation function"); 
  }
 
 $(".modal-button").click(function() {

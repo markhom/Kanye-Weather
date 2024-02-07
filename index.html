@@ -29,7 +29,7 @@
     </div>
     <br>
     <section>
-    <p>insert kanye quote here</p>
+    <p id="quoteContainer"></p>
         </section>
 
         
@@ -40,7 +40,7 @@
                 Kanye's Modal
             </span><br><br>
             <p>
-                <a class="button is-danger is-primary modal-button" data-target="#modal">Launch example modal</a>
+                <a id="clickEvent" class="button is-danger is-primary modal-button" data-target="#modal">Launch example modal</a>
             </p>
             <div id="modal" class="modal">
                 <div class="modal-background"></div>
@@ -73,17 +73,7 @@
     </section>
 </body>
 
-     <script>$(".modal-button").click(function() {
-        var target = $(this).data("target");
-        $("html").addClass("is-clipped");
-        $(target).addClass("is-active");
-        });
-        
-        $(".modal-close").click(function() {
-        $("html").removeClass("is-clipped");
-        $(this).parent().removeClass("is-active");
-        });
-    
+     <script src="assets\script.js">
     </script>
      
 
