@@ -50,24 +50,13 @@
                     </article>
                  </div>
               </div>
-              <button class = "modal-close is-large" aria-label="close"></button>
+              <button class = "modal-close is-large" id="clickEvent" aria-label="close"></button>
            </div>
         </div>
      </section>
+     <div id="quoteContainer"></div>
 
-
-     <script>
-    $(".modal-button").click(function() {
-    var target = $(this).data("target");
-    $("html").addClass("is-clipped");
-    $(target).addClass("is-active");
-    });
-    
-    $(".modal-close").click(function() {
-    $("html").removeClass("is-clipped");
-    $(this).parent().removeClass("is-active");
-    });
-     </script>
+     <script src="assets\script.js"></script>
      
 
 </body>
