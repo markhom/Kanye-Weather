@@ -6,3 +6,16 @@ fetch(url) //request quotes from server
     document.getElementById('quoteContainer').textContent = data.quote; // id for injected quotes is "quoteContainer". 
 })
 .catch(error => console.error(error)); //error message.     
+
+
+
+$(".modal-button").click(function() {
+    var target = $(this).data("target");
+    $("html").addClass("is-clipped");
+    $(target).addClass("is-active");
+    });
+    
+    $(".modal-close").click(function() {
+    $("html").removeClass("is-clipped");
+    $(this).parent().removeClass("is-active");
+    });
