@@ -30,7 +30,12 @@ let latitude = position.coords.latitude;
 let longitude = position.coords.longitude;
 
 //Nearest city based on coords
-fetch
+fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
+    .then(response => response.json())
+    .then(data => {
+        let closestCity = data.address.city;
+        console.log(closestCity);
+    })
  }
 
  function errorCall(error) {
