@@ -8,69 +8,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        .modal {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .modal-content {
+            max-width: 80%;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>
-            Welcome to Kanye Weather!
-        </h1>
-    </header>
-    <br>
-    <div>
-        <label for="locationInput">Enter your Location:</label>
-    </div>
-    <div> <input type="text" id="locationInput" placeholder="E.g., City, Country">
-    </div>
-
-    <div>
-        <input type="button" value="Find My Location">
-    </div>
-    <br>
-    <section>
-    <p>insert kanye quote here</p>
-        </section>
-
-        
-
-    <section class="section">
-        <div class="container">
-            <span class="title">
-                Kanye's Modal
-            </span><br><br>
-            <p>
-                <a class="button is-danger is-primary modal-button" data-target="#modal">Launch example modal</a>
-            </p>
-            <div id="modal" class="modal">
-                <div class="modal-background"></div>
-                <div class="modal-content">
-                    <div class="box">
-                        <article class="media">
-                            <div class="media-left">
-                            </div>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Modal works</strong> <small>Yay!</small>
-                                        <br>This is simple text.This is simple text.This is simple text.This is simple
-                                        text.
-                                    </p>
-                                </div>
-                                <nav class="level">
-                                    <div class="level-left">
-                                        <a class="level-item">
-                                        </a>
-                                    </div>
-                                </nav>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <button class="modal-close is-large" aria-label="close"></button>
-            </div>
-        </div>
-    </section>
+    <!-- ... (your existing HTML content) ... -->
 </body>
 
 <script>
@@ -85,8 +37,5 @@
         $(this).parent().removeClass("is-active");
     });
 </script>
-
-
-</body>
 
 </html>
