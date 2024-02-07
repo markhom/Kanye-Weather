@@ -10,11 +10,17 @@ fetch(url) //request quotes from server
 .then(data => {
     document.getElementById('quoteContainer').textContent = data.quote; // id for injected quotes is "quoteContainer". 
 })
-.catch(error => console.error(error)); //error message.    
-//adding a call to the weather forecast function here will allow it to execute sequentially.
-//EXAMPLE:
-// getWeather()
-//must implement a way to locate the users city or chosen city
+.catch(error => console.error(error)); //error message.     
 }
 
-//INSERT 5 DAY WEATHER FORECAST/GEOCODING(???MAYBE NEED?)
+
+$(".modal-button").click(function() {
+    var target = $(this).data("target");
+    $("html").addClass("is-clipped");
+    $(target).addClass("is-active");
+    });
+    
+    $(".modal-close").click(function() {
+    $("html").removeClass("is-clipped");
+    $(this).parent().removeClass("is-active");
+    });
