@@ -11,7 +11,7 @@ fetch(url) //request quotes from server
     //call function to automatically detect user location
     getLocation();
 })
-.catch(error => console.error(error)); //error message.     
+.catch(error => console.error("error retrieving quote", error)); //error message specific to function     
 }
 //function to retrieve user coordinates
  function getLocation() {
@@ -22,24 +22,36 @@ fetch(url) //request quotes from server
             enableHighAccuracy:true, //options object, higher accuracy geolocation.
         }  
         );
-        // return userLocate;
  }
 
  function successCall(position) {
 let latitude = position.coords.latitude;
 let longitude = position.coords.longitude;
 
-//Nearest city based on coords.
+//Nearest city based on coords. nominatim api + openstreetmap
 fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`) //when the users lat and long are successfully retrieved they are used as variables here.
     .then(response => response.json())
     .then(data => {
         let closestCity = data.address.city;
         console.log(closestCity); //check console for city name.
+        //summon the next function
+        fetchWeather(closestCity);
     })
+    .catch(error => console.error("error retrieving coordinates", error)); //error message specific to function
  }
+//weather api
+function fetchWeather(closestCity){
+    let weatherKey = '0f155a46c630bcfc919257e207d8ff73'; //api key with specific name
+    let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${closestCity}&appid=${weatherKey}`; //url used to fetch. 
 
+    fetch(weatherUrl)
+    .then(response => response.json())
+    .then (data => {
+        console.log("Weather for", closestCity + ":", data); //sends raw data to console
+           
+    })
  function errorCall(error) {
-console.log("error in getLocation function"); 
+console.log("error in getLocation function or user has rejected permissions."); 
  }
 
 $(".modal-button").click(function() {
