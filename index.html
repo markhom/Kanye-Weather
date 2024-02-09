@@ -11,6 +11,10 @@
 
 </head>
 
+
+
+
+
 <body>
     <header>
         <h1>
@@ -18,24 +22,24 @@
         </h1>
     </header>
     <br>
-    <div>
-        <label for="locationInput">Enter your Location:</label>
-    </div>
-    <div> <input type="text" id="locationInput" placeholder="E.g., City, Country">
-    </div>
+    <div id="kanye" style="display: none;">
 
-    <div>
+        <label for="locationInput">Enter your Location:</label>
+        <input type="text" id="locationInput" placeholder="E.g., City, Country">
         <input type="button" value="Find My Location">
-    </div>
-    <br>
-    <section>
-    <p id="quoteContainer"></p>
-    <!-- temp div to see and style the quote and weather, working on icon and need input for how this should look so I know what types of weather data we want and how we want that conveyed to the user -->
-    <div id="weatherContainer"></div> 
-    <!--end of temp div -->
+
+        <section>
+            <p id="quoteContainer"></p>
+            <!-- temp div to see and style the quote and weather, working on icon and need input for how this should look so I know what types of weather data we want and how we want that conveyed to the user -->
+            <div id="weatherContainer"></div>
+            <!--end of temp div -->
         </section>
 
-        
+
+    </div>
+    <br>
+
+
 
     <section class="section">
         <div class="container">
@@ -43,43 +47,54 @@
                 Kanye's Modal
             </span><br><br>
             <p>
-                <a id="clickEvent" class="button is-danger is-primary modal-button" data-target="#modal">Launch example modal</a>
+                <a id="start" class="button is-danger is-primary modal-button" data-target="#modal">Launch example
+                    modal</a>
             </p>
-            <div id="modal" class="modal">
-                <div class="modal-background"></div>
-                <div class="modal-content">
-                    <div class="box">
-                        <article class="media">
-                            <div class="media-left">
-                            </div>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Modal works</strong> <small>Yay!</small>
-                                        <br>This is simple text.This is simple text.This is simple text.This is simple
-                                        text.
-                                    </p>
-                                </div>
-                                <nav class="level">
-                                    <div class="level-left">
-                                        <a class="level-item">
-                                        </a>
-                                    </div>
-                                </nav>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <button class="modal-close is-large" aria-label="close"></button>
-            </div>
         </div>
     </section>
-</body>
+    <div id="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>Modal works</strong> <small>Yay!</small>
+                                <br>This is simple text.This is simple text.This is simple text.This is simple
+                                text.
+                            </p>
+                        </div>
+                        <nav class="level">
+                            <div class="level-left">
+                                <a class="level-item">
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    
 
-     <script src="assets\script.js">
-    </script>
-     
+        <script src="assets\script.js">
+        </script>
 
+<script>
+    $(document).ready(function () {
+    //show modal on start click
+    $('#start').click(function () {
+        //hide modal on exit
+        $('.startContainer').hide();
+        $('#kanye').show();
+
+      });
+});
+</script>
 </body>
 
 </html>
