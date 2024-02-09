@@ -42,29 +42,23 @@ fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&l
 //weather api
 function fetchWeather(closestCity){
     let weatherKey = '0f155a46c630bcfc919257e207d8ff73'; //api key with specific name
-    let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${closestCity}&appid=${weatherKey}`; //url used to fetch. 
+    let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${closestCity}&appid=${weatherKey}&units=imperial`; //url used to fetch, units=imperial is important to avoid inserting high school math into your javascript.                    
 
     fetch(weatherUrl)
     .then(response => response.json())
     .then (data => {
-        console.log("Weather for", closestCity + ":", data); //sends raw data to console
-           //replace above with getelementbyid insertions
-           displayWeather(data, closestCity); //calling the next function
+        console.log("Weather for", closestCity + ":", data); //sends raw data to console                  
+           displayWeather(data, closestCity); //calling the next function, ensuring all relevant data is passed on correctly.
     })
     .catch(error => console.error("error fetching weather", error)); //error message specific to function
 }
 //function to insert the previously fetched weather data and place it within pre-existing html. 
 function displayWeather(weatherData, closestCity) {
-    let weatherContainer = document.getElementById('weatherContainer');
-    weatherContainer.innerHTML = "";
-
-    //was getting units back in kelvin, converting to farenheiht below
-
-    
-
-    let temperature = document.createElement('p');
-    temperature.textContent = `It is currently ${weatherData.main.temp} in ${closestCity}, ${weatherData.weather[0].description} can be expected when venturing outdoors`;
-    weatherContainer.appendChild(temperature);
+    let weatherContainer = document.getElementById('weatherContainer'); //creates variable to establish a connection between the data and the html
+    weatherContainer.innerHTML = ""; //blank slate to start from and also clears any previous data on page reload/another click of the relevant button. 
+    let temperature = document.createElement('p'); // establishes temperature as a variable, creates an html <p> tag to place it in.                                                                            
+    temperature.textContent = `It is currently ${weatherData.main.temp} degrees Fahrenheit in ${closestCity}, ${weatherData.weather[0].description} can be expected when venturing outdoors`; // formats data for better user experience.  
+    weatherContainer.appendChild(temperature); //adds child to parent element.  
     }
  function errorCall(error) {
 console.log("error in getLocation function or user has rejected permissions."); 
