@@ -9,7 +9,7 @@ fetch(url) //request quotes from server
 .then(data => {
     document.getElementById('quoteContainer').textContent = data.quote; // id for injected quotes is "quoteContainer". 
     //call function to automatically detect user location
-    getLocation();
+    getLocation(); 
 })
 .catch(error => console.error("error retrieving quote", error)); //error message specific to function     
 }
@@ -59,7 +59,19 @@ function displayWeather(weatherData, closestCity) {
     let temperature = document.createElement('p'); // establishes temperature as a variable, creates an html <p> tag to place it in.                                                                            
     temperature.textContent = `It is currently ${weatherData.main.temp} degrees Fahrenheit in ${closestCity}, ${weatherData.weather[0].description} can be expected when venturing outdoors`; // formats data for better user experience.  
     weatherContainer.appendChild(temperature); //adds child to parent element.  
+    addMap(weatherData); //next function, pass on weatherData for use. 
     }
+
+    //function below to display an icon
+    function addMap(weatherData) { 
+        let mapContainer = document.getElementById('theMap'); //this becomes the icon.
+        let weatherDesignater = weatherData.weather[0].icon; // finds out what the weather is and design
+        let picUrl = `https://openweathermap.org/img/wn/${weatherDesignater}.png`; //api icon url link
+        $('#theMap').attr('src', picUrl); //pushes this source to the empty html field.
+        document.getElementById('theMap').style.display = "block";
+    }
+
+
  function errorCall(error) {
 console.log("error in getLocation function or user has rejected permissions."); 
  }
