@@ -48,8 +48,24 @@ function fetchWeather(closestCity){
     .then(response => response.json())
     .then (data => {
         console.log("Weather for", closestCity + ":", data); //sends raw data to console
-           
+           //replace above with getelementbyid insertions
+           displayWeather(data, closestCity); //calling the next function
     })
+    .catch(error => console.error("error fetching weather", error)); //error message specific to function
+}
+//function to insert the previously fetched weather data and place it within pre-existing html. 
+function displayWeather(weatherData, closestCity) {
+    let weatherContainer = document.getElementById('weatherContainer');
+    weatherContainer.innerHTML = "";
+
+    //was getting units back in kelvin, converting to farenheiht below
+
+    
+
+    let temperature = document.createElement('p');
+    temperature.textContent = `It is currently ${weatherData.main.temp} in ${closestCity}, ${weatherData.weather[0].description} can be expected when venturing outdoors`;
+    weatherContainer.appendChild(temperature);
+    }
  function errorCall(error) {
 console.log("error in getLocation function or user has rejected permissions."); 
  }
