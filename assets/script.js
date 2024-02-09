@@ -26,7 +26,7 @@ $(".modal-button").click(function() {
     });
 
 
-document.addEventListener('ContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
     updateRunCountDisplay();
 })
 
@@ -42,3 +42,30 @@ function resetRunCount() {
     localStorage.removeItem('runCount');
     updateRunCountDisplay();
 }
+
+document.addEventListener('ModalContent',function(){
+    let modal = document.getElementById('#modal');       //get modal and what shows after
+    let contentToShow = document.getElementById('#kanye')
+
+    let modalStart = document.getElementById('#start')           
+    let closeButton = document.querySelector('.modal-close')
+
+    modalStart.onclick = function() {
+        modal.style.display = "block";
+      };
+
+      closeButton.onclick = function () {
+        modal.style.display = "none";
+        contentToShow.style.display = "block";
+      };
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+          contentToShow.style.display = "block";
+        }
+      };
+
+})
+    startButton.addEventListener('click', function(){
+
+    })
