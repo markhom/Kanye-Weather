@@ -16,14 +16,39 @@
 
 
 <body>
-    <section id='startContainer' class="section">
+    <header>
+        <h1>
+            Welcome to Kanye Weather!
+        </h1>
+    </header>
+    <br>
+    <div id="kanye" style="display: none;">
+
+        <label for="locationInput">Enter your Location:</label>
+        <input type="text" id="locationInput" placeholder="E.g., City, Country">
+        <input type="button" value="Find My Location">
+
+        <section>
+            <p id="quoteContainer"></p>
+            <!-- temp div to see and style the quote and weather, working on icon and need input for how this should look so I know what types of weather data we want and how we want that conveyed to the user -->
+            <div id="weatherContainer"></div>
+            <!--end of temp div -->
+        </section>
+
+
+    </div>
+    <br>
+
+
+
+    <section class="section">
         <div class="container">
             <span class="title">
                 Kanye's Modal
             </span><br><br>
             <p>
-                <a id="start" , class="button is-danger is-primary modal-button" data-target="#modal">Start Kanye
-                    Weather</a>
+                <a id="start" class="button is-danger is-primary modal-button" data-target="#modal">Launch example
+                    modal</a>
             </p>
         </div>
     </section>
@@ -54,50 +79,22 @@
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-    <div>
-        <header>
-            <h1>
-                Welcome to Kanye Weather!
-            </h1>
-        </header>
-        <br>
-        <div id="kanye" style="display: none;">
-            <label for="locationInput">Enter your Location:</label>
-            <input type="text" id="locationInput" placeholder="E.g., City, Country">
-            <input type="button" value="Find My Location">
-            <p>insert kanye quote here</p>
-        </div>
+    
 
-    </div>
-    <script>
-        $(".modal-button").click(function () {
-            var target = $(this).data("target");
-            $("html").addClass("is-clipped");
-            $(target).addClass("is-active");
-        });
+        <script src="assets\script.js">
+        </script>
 
-        $(".modal-close").click(function () {
-            $("html").removeClass("is-clipped");
-            $(this).parent().removeClass("is-active");
-        });
-    </script>
+<script>
+    $(document).ready(function () {
+    //show modal on start click
+    $('#start').click(function () {
+        //hide modal on exit
+        $('.startContainer').hide();
+        $('#kanye').show();
 
-    <script>
-        $(document).ready(function () {
-            //show modal on start click
-            $('#start').click(function () {
-              //hide modal on exit
-                $('#startContainer').hide();
-                $('#kanye').show();
-            
-            });
-           
-           
-            });
-
-        
-    </script>
-
+      });
+});
+</script>
 </body>
 
 </html>
