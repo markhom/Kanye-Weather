@@ -12,17 +12,18 @@
 </head>
 
 
-
-
+<!-- Title -->
 
 <body>
     <header>
         <h1>
-            Welcome to Kanye Weather!
+            Welcome to Kanye Weather!    
         </h1>
     </header>
     <br>
     <div id="kanye" style="display: none;">
+
+<!-- Location Input -->
 
         <label for="locationInput">Enter your Location:</label>
         <input type="text" id="locationInput" placeholder="E.g., City, Country">
@@ -30,11 +31,19 @@
 
         <section>
             <br>
-           <input type="button" value="ye... inspire me">
+<!-- randomize -->
+            <input type="button" onclick="getRandomKanyeQuote()" value="ye... inspire me">
             <p id="quoteContainer"></p>
+        </section>
+        <!-- temp div to see and style the quote and weather, working on icon and need input for how this should look so I know what types of weather data we want and how we want that conveyed to the user -->
+        <section>
+             id="weatherContainer">
+                <ul>
+                    <li>weather:</li>
+                    <li>wind speed:</li>
+                    <li>real feel:</li>
+                </ul>
             
-            <!-- temp div to see and style the quote and weather, working on icon and need input for how this should look so I know what types of weather data we want and how we want that conveyed to the user -->
-            <div id="weatherContainer"></div>
             <!--end of temp div -->
         </section>
 
@@ -82,10 +91,10 @@
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-    
 
-        <script src="assets\script.js">
-        </script>
+
+    <script src="assets/script.js">
+    </script>
 </body>
 
 </html>
