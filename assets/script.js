@@ -98,3 +98,18 @@ $(document).ready(function () {
       });
 });
 
+function getRandomKanyeQuote() {
+    
+    quoteGenerator().then((quotes) => {
+        if (quotes.length > 0) {
+            
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+
+            // show randomly selected quote
+            document.getElementById('quoteContainer').innerText = quotes[randomIndex];
+        } 
+    }).catch((error) => {
+            // display if error
+        console.error("Error fetching Kanye quotes", error);
+    });
+}
