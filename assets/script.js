@@ -47,31 +47,24 @@ function fetchWeather(closestCity) {
     fetch(weatherUrl)
     .then(response => response.json())
     .then (data => {
-        console.log("Weather for", closestCity + ":", data); //sends raw data to console                  
-           displayWeather(data, closestCity); //calling the next function, ensuring all relevant data is passed on correctly.
+        document.getElementById('temperature').textContent = `Temperature: ${data.main.temp}°F`; //accessing specific api data off this list: https://openweathermap.org/api/one-call-3 
+        document.getElementById('realFeel').textContent = `Real Feel: ${data.main.feels_like}°F`;
+        document.getElementById('weatherConditions').textContent = `Weather Conditions: ${data.weather[0].description}`; 
+        document.getElementById('precipitation').textContent = `Precipitation: ${data.clouds.all}%`; 
+        document.getElementById('visibility').textContent = `Visibility: ${data.visibility}`;
+        document.getElementById('humidity').textContent = `Humidity: ${data.main.humidity}%`;              
+        addMap(data) //calling the next function, ensuring all relevant data is passed on correctly.
     })
     .catch(error => console.error("error fetching weather", error)); //error message specific to function
 }
-//function to insert the previously fetched weather data and place it within pre-existing html. 
-function displayWeather(weatherData, closestCity) {
-    let weatherContainer = document.getElementById('weatherContainer'); //creates variable to establish a connection between the data and the html
-    weatherContainer.innerHTML = ""; //blank slate to start from and also clears any previous data on page reload/another click of the relevant button. 
-    let temperature = document.createElement('p'); // establishes temperature as a variable, creates an html <p> tag to place it in.                                                                            
-    temperature.textContent = `It is currently ${weatherData.main.temp} degrees Fahrenheit in ${closestCity}, ${weatherData.weather[0].description} can be expected when venturing outdoors`; // formats data for better user experience.  
-    weatherContainer.appendChild(temperature); //adds child to parent element.  
-    addMap(weatherData); //next function, pass on weatherData for use. 
-    }
-
-    //function below to display an icon
+    //function below to display an icon above list of weather conditions. 
     function addMap(weatherData) { 
         let mapContainer = document.getElementById('theMap'); //this becomes the icon, theMap is the icon and should have a div around it in the html to work.
         let weatherDesignater = weatherData.weather[0].icon; // finds out what the weather is and design
         let picUrl = `https://openweathermap.org/img/wn/${weatherDesignater}.png`; //api icon url link
-        $('#theMap').attr('src', picUrl); //pushes this source to the empty html field.
+        $('#theMap').attr('src', picUrl); //pushes this source to the empty html field, with #theMap being the actual image and iconPic being the li container portion (both must be present to function properly)
        
     }
-
-
  function errorCall(error) {
 console.log("error in getLocation function or user has rejected permissions."); 
  }
