@@ -1,4 +1,14 @@
-<style>
+/* 
+        .modal {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            max-width: 80%;
+        }
+     */
         /* Custom colors inspired by Kanye's "Donda" album */
         :root {
             --donda-red: #ea4c5a;
@@ -22,4 +32,4 @@
         }
 
         /* Add any additional styling as needed */
-    </style>
+    
