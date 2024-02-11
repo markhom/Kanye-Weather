@@ -48,7 +48,7 @@ function fetchWeather(closestCity) {
     .then(response => response.json())
     .then (data => {
         document.getElementById('temperature').textContent = `Temperature: ${data.main.temp}°F`; //accessing specific api data off this list: https://openweathermap.org/api/one-call-3 
-        document.getElementById('realFeel').textContent = `Real Feel: ${data.main.feels_like}°F`;
+        document.getElementById('realFeel').textContent = `Real Feel: ${data.main.feels_like}°F`; 
         document.getElementById('weatherConditions').textContent = `Weather Conditions: ${data.weather[0].description}`; 
         document.getElementById('precipitation').textContent = `Precipitation: ${data.clouds.all}%`; 
         document.getElementById('visibility').textContent = `Visibility: ${data.visibility}`;
@@ -106,3 +106,4 @@ function getRandomKanyeQuote() {
         console.error("Error fetching Kanye quotes", error);
     });
 }
+
