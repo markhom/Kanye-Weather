@@ -8,56 +8,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<link rel="stylesheet" href="assets\style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-
 
 <!-- Title -->
 
-<body>
+<body style="text-align: center;">
     <header>
         <h1>
-            Welcome to Kanye Weather!    
+            Cloudy with a chance of Ye !
         </h1>
     </header>
     <br>
     <div id="kanye" style="display: none;">
 
-<!-- Location Input -->
-<!-- 
-        <label for="locationInput">Enter your Location:</label>
-        <input type="text" id="locationInput" placeholder="E.g., City, Country">
-        <input type="button" value="Find My Location">
+        <!-- Location Input -->
+        <!-- 
+            <label for="locationInput">Enter your Location:</label>
+            <input type="text" id="locationInput" placeholder="E.g., City, Country">
+            <input type="button" value="Find My Location">
 
-        <section>
-            <br> -->
-<!-- randomize -->
-            <input type="button" onclick="getRandomKanyeQuote()" value="ye... inspire me">
-            <p id="quoteContainer"></p>
+            <section>
+                <br> -->
+        <!-- randomize -->
+        <input type="button" onclick="getRandomKanyeQuote()" value="ye... inspire me">
+        <p id="quoteContainer"></p>
         </section>
         <!-- temp div to see and style the quote and weather, working on icon and need input for how this should look so I know what types of weather data we want and how we want that conveyed to the user -->
         <section>
-             
-                <ul>
-                    <li id="iconPic"><img id="theMap" src="" alt="Weather icon that depicts the current weather in your location"> </li> 
-                    <li id="temperature">Temperature in F:</li>
-                    <li id="realFeel">Real Feel:</li>
-                    <li id="weatherConditions">Weather Conditions:</li> 
-                    <li id="precipitation">Precipitation:</li>
-                    <li id="visibility">Visibility:</li>
-                    <li id="humidity">Humidity:</li>
-                </ul>
-            
+            <ul>
+                <li id="iconPic"><img id="theMap" src="" alt="Weather icon that depicts the current weather in your location"> </li>
+                <li id="temperature">Temperature in F:</li>
+                <li id="realFeel">Real Feel:</li>
+                <li id="weatherConditions">Weather Conditions:</li>
+                <li id="precipitation">Precipitation:</li>
+                <li id="visibility">Visibility:</li>
+                <li id="humidity">Humidity:</li>
+            </ul>
             <!--end of temp div -->
         </section>
-
-
     </div>
     <br>
 
-
-
-    <section id="startContainer">
+    <section id="startContainer" style="text-align: center;">
         <div class="container">
             <span class="title">
                 Kanye's Modal
@@ -79,7 +72,7 @@
                         <div class="content">
                             <p>
                                 <strong>Modal works</strong> <small>Yay!</small>
-                                <br>This is simple text.This is simple text.This is simple text.This is simple
+                                <br>This is simple text. This is simple text. This is simple text. This is simple
                                 text.
                             </p>
                         </div>
@@ -95,7 +88,6 @@
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-
 
     <script src="assets/script.js">
     </script>
