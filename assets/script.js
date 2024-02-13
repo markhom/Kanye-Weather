@@ -3,7 +3,7 @@ document.getElementById("start").addEventListener("click", function () {
     quoteGenerator()
 });
 function quoteGenerator() {
-    const url = 'https://api.kanye.rest/'; //url variable name assigned a value of: https://api.kanye.rest/
+    let url = 'https://api.kanye.rest/'; //url variable name assigned a value of: https://api.kanye.rest/
     fetch(url) //request quotes from server
         .then(response => response.json()) //json conversion 
         .then(data => {
