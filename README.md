@@ -18,7 +18,7 @@ So I can remain safe by being aware of incoming bad weather.
 - Amara Briquelet
 - Mark Homchik
 - Pedro Felipe Valencia 
-
+- Cleo Miller 
 ## Wireframe:
 
 ![Kanye Weather img 1](./assets/images/Kanye%20wirefraame%20pg1.png)
