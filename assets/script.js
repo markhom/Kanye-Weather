@@ -87,9 +87,9 @@ $(document).ready(function () {
     });
 });
 
-function getRandomKanyeQuote() {
-
-    quoteGenerator().then((quotes) => {
+function getRandomKanyeQuote() {   // new function to get random kanye quote at click
+     
+    quoteGenerator().then((quotes) => {  // calling quote generator function
         if (quotes.length > 0) {
 
             const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -103,3 +103,24 @@ function getRandomKanyeQuote() {
     });
 }
 
+
+document.addEventListener('DOMContentLoaded', function () {
+        //count starts at 0
+        let pageLoadCount = localStorage.getItem('pageLoadCount') || 0;
+        //add load count for every refresh
+        pageLoadCount++;
+        // put page load count into text
+        document.getElementById('loadCount').textContent = `This page has been loaded ${pageLoadCount} times.`;
+        
+        localStorage.setItem('pageLoadCount', pageLoadCount);
+
+        // Add event listener for the reset button
+        document.getElementById('resetButton').addEventListener('click', function () {
+            // Reset the count to 0
+            localStorage.setItem('pageLoadCount', 0);
+
+             // Update the displayed count
+             document.getElementById('loadCount').textContent = 'Page load count has been reset.';
+            } 
+    
+)})
