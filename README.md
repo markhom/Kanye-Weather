@@ -1,51 +1,97 @@
-# Kanye-Weather
+<p style="text-align:center; border-bottom: 1px #ea4c5a solid; font-weight:800; font-size:30px">Kanye-Weather</p>
 
-## Description:
 
-This is a simple, browser-based, weather app that aims to keep Ye fans informed of the weather by enticing them with a random Ye quote. It includes a localstorage counter that is displayed on the page that gives the user a better idea of how often they are checking the weather. 
 
-### User Story:
+<p style="text-align:center; border-bottom: 1px #95a5a6 solid; font-weight:800; font-size:25px; margin: 0 20px 0 20px;">Description:</p>
 
-AS a Ye fan I would like to receive motivation to check the weather more frequently,
-SO I will be armed with the necessary information to prepare myself and my belongings before going outdoors.
+<p style="text-align:center; font-size:15px; font-weight:500;">This is a simple, browser-based, weather app that aims to keep Ye fans informed of the weather by enticing them with a random Ye quote. It includes a localstorage counter that is displayed on the page that gives the user a better idea of how often they are checking the weather. </p>
 
-### Wireframe:
+<p style="text-align:center; border-bottom: 1px #95a5a6 solid; font-weight:500; margin:10px 100px 10px 100px; font-size:20px">User Story:</p>
+
+<p style="text-align:center; font-size:15px; font-weight:500;">AS a Ye fan I would like to receive motivation to check the weather more frequently,
+SO I will be armed with the necessary information to prepare myself and my belongings before going outdoors.</P>
+
+<p style="text-align:center; border-bottom: 1px #95a5a6 solid; font-weight:500; margin:10px 100px 10px 100px; font-size:20px">Wireframe:</p>
 
 ![Kanye Weather img 1](./assets/images/Kanye%20wirefraame%20pg1.png)
 ![Kanye Weather img 2](./assets/images/Kanye%20wireframe%20pg2.png)
 
-### Why we chose this project and what we learned:  
-- **Amara Briquelet:** 
+<p style="text-align:center; border-bottom: 1px #95a5a6 solid; font-weight:500; margin:10px 100px 10px 100px; font-size:20px">Why we chose this project and what we learned :</p>
+
+- **Amara Briquelet:** I thought it would be fun to make an app that mixes an extremely useful API with one that is purely for entertainment purposes.
 
 - **Mark Homchik:**
 - **Pedro Felipe Valencia:**
 - **Cleo Miller:**
 
-## Usage:
-- **Step 1:** Click the "FACTS" button to start the application: ![Image of "FACTS" button](assets\images\README1.PNG).
-- **Step 2:** Click "allow": ![Image of location access request](assets\images\README2.png).
-- **Step 3:** Admire modal: ![Image of modal](assets\images\README3.PNG).
-- **Step 4:** Exit modal: ![Image of button that closes modal](assets\images\README4.PNG).
-- **Step 5:** Behold quote interface, hit the button to generate a different quote: ![Image of Ye quote section of application.](assets\images\README5.PNG).
-- **Step 6:** View the weather: ![Image of weather data in the application](assets\images\README6.PNG).
-- **Step 7:** Check how many times you have checked the weather and reset the localstorage count if desired: ![image of localstorage part of application](assets\images\README7.PNG). 
+<p style="text-align:center; border-bottom: 1px #ea4c5a solid; font-weight:700; font-size:25px">Usage:</p>
 
-## Credits:
+<p style="text-align:center; font-size: 15px; font-weight: 500;">1. Click the "FACTS" button to start the application:</p>
+<br>
 
-### Contributors:
+ <p align="center">
+  <img src="assets\images\README1.PNG" />
+</p> 
 
-- Amara Briquelet
-- Mark Homchik
-- Pedro Felipe Valencia 
-- Cleo Miller
+<p style="text-align:center; font-size: 15px; font-weight: 500;">2. Click "allow": </p>
+<br>
 
-### API Used:
+<p align="center">
+  <img src="assets\images\README2.png" />
+</p>
 
-- [OpenWeather](https://openweathermap.org/forecast5#geo5)
+<p style="text-align:center; font-size: 15px; font-weight: 500;">3. Admire modal:</p>
+ <br>
 
-- [kanye.rest](https://kanye.rest/)
+ <p align="center">
+  <img src="assets\images\README3.PNG" />
+</p>
 
-## License:
+<p style="text-align:center; font-size: 15px; font-weight: 500;">4. Exit modal:</p>
+<br>
+
+ <p align="center">
+  <img src="assets\images\README4.PNG" />
+</p>
+
+<p style="text-align:center; font-size: 15px; font-weight: 500;">5. Behold quote interface, hit the button to generate a different quote:</p>
+<br>
+
+ <p align="center">
+  <img src="assets\images\README5.PNG" />
+</p>
+
+<p style="text-align:center; font-size: 15px; font-weight: 500;">6. View the weather: </p>
+<br>
+
+!<p align="center">
+  <img src="assets\images\README6.PNG" />
+</p>
+
+<p style="text-align:center; font-size: 15px; font-weight: 500;">7. Check how many times you have checked the weather and reset the localstorage count if desired:</p>
+<br>
+
+<p align="center">
+  <img src="assets\images\README7.PNG"/>
+</p>
+
+
+
+
+<p style="text-align:center; border-bottom: 1px #ea4c5a solid; font-weight:800; font-size:25px">Credits:</p>
+
+<p style="text-align:center; border-bottom: 1px #95a5a6 solid; font-weight:500; margin:10px 100px 10px 100px; font-size:20px">Contributors</p>
+
+<p align="center" style="font-size:18px; font-weight:600;">Amara Briquelet</p>
+<p align="center" style="font-size:18px; font-weight:600;">Mark Homchik</p>
+<p align="center" style="font-size:18px; font-weight:600;">Pedro Felipe Valencia</p>
+<p align="center" style="font-size:18px; font-weight:600;">Cleo Miller</p>
+
+ <p style="text-align:center; border-bottom: 1px #95a5a6 solid; font-weight:500; margin:10px 100px 10px 100px; font-size:20px">API Used:</p> 
+<p align="center"><a href="https://openweathermap.org/forecast5#geo5">OpenWeather</a> </p>
+<p align="center"><a href="https://kanye.rest/">kanye.rest</a> </p>
+
+<p style="text-align:center; border-bottom: 1px #95a5a6 solid; font-weight:500; margin:10px 100px 10px 100px; font-size:20px"> License: </p>
 
 
 

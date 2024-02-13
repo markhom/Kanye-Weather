@@ -24,7 +24,7 @@
         .modal-close,
         .button.is-danger.is-primary {
             background-color: var(--donda-red);
-            color: #fff;
+            color: #fff;   
         }
 
         .title {
