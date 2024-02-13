@@ -2,22 +2,19 @@
 
 ## Description:
 
-This is a simple, browser-based, weather app that aims to keep fans of Kanye West aware of the weather so that they can take proactive steps to keep themselves safe in case poor conditions are approaching. The app uses a random Kanye quote to entice the user to check back on a daily (time interval subject to change or deletion) basis. The secondary objective of this app is to bring joy through daily interaction. 
-Additional things that can be added upon the swift completion of a MVP:
+This is a simple, browser-based, weather app that aims to keep Ye fans informed of the weather by enticing them with a random Ye quote. It includes a localstorage counter that is displayed on the page that gives the user a better idea of how often they are checking the weather. 
 
-- Way to inform the user of specific weather events via a type of global alert that the user can bath to the app by interacting with. Something to detect what the weather service deems a hazardous condition and having that trigger the alert (?). 
-- Some type of timer functionality to serve as an extra means to draw the user to open the app. 
+### User Story:
 
-## User Story:
+AS a Ye fan I would like to receive motivation to check the weather more frequently,
+SO I will be armed with the necessary information to prepare myself and my belongings before going outdoors.  
 
-AS A resident of city X I would like to have a weather app that reminds me to check it daily and rewards me with a new Kanye quote when opened.
-So I can remain safe by being aware of incoming bad weather.
-
-## Contributors:
+## Credits
 
 - Amara Briquelet
 - Mark Homchik
-- Pedro Felipe Valencia 
+- Pedro Felipe Valencia
+
 
 ## Wireframe:
 
