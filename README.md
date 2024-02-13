@@ -22,7 +22,10 @@ SO I will be armed with the necessary information to prepare myself and my belon
 My main takeaways from working on this project:
 - Don't get feature happy unless MVP is achieved early, if a functionality can be added without adding an extra API do it without adding it to avoid inconsistent results. 
 - How to coordinate with other devs on a team. 
-- **Mark Homchik:**
+- **Mark Homchik:** I enjoyed working on my first team project with a group. It was very interesting to see how all of our minds put together can make one small or big project work.
+My main takeaways and things I learned:
+- Ask questions. A lot of them, if you can't figure something out the best possible thing to do is to ask questions.
+- Learned how to communicate productively even when everyone is far away or has different time zones
 - **Pedro Felipe Valencia:**
 - **Cleo Miller:**
 
