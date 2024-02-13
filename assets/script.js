@@ -33,6 +33,7 @@ function successCall(position) {
         .then(response => response.json())
         .then(data => {
             let closestCity = data.address.city;
+            console.log(data);
             console.log(closestCity); //check console for city name.
             //summon the next function
             fetchWeather(closestCity);
@@ -91,9 +92,9 @@ $(document).ready(function () {
       });
 });
 
-function getRandomKanyeQuote() {
-    
-    quoteGenerator().then((quotes) => {
+function getRandomKanyeQuote() {   // new function to get random kanye quote at click
+     
+    quoteGenerator().then((quotes) => {  // calling quote generator function
         if (quotes.length > 0) {
             
             const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -106,3 +107,17 @@ function getRandomKanyeQuote() {
         console.error("Error fetching Kanye quotes", error);
     });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (typeof(Storage) !== "undefined") {
+
+        let pageLoadCount = localStorage.getItem('pageLoadCount') || 0;
+
+        pageLoadCount++;
+
+        document.getElementById('loadCount').textContent = `This page has been loaded ${pageLoadCount} times.`;
+
+        localStorage.setItem('pageLoadCount', pageLoadCount);
+            } 
+    }
+)
