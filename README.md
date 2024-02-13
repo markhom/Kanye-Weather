@@ -7,15 +7,37 @@ This is a simple, browser-based, weather app that aims to keep Ye fans informed 
 ### User Story:
 
 AS a Ye fan I would like to receive motivation to check the weather more frequently,
-SO I will be armed with the necessary information to prepare myself and my belongings before going outdoors.  
+SO I will be armed with the necessary information to prepare myself and my belongings before going outdoors.
 
-## Credits
+### Wireframe:
+
+![Kanye Weather img 1](./assets/images/Kanye%20wirefraame%20pg1.png)
+![Kanye Weather img 2](./assets/images/Kanye%20wireframe%20pg2.png)
+
+### Why we created this project and what we learned:  
+**Amara Briquelet:**
+**Mark Homchik:**
+**Pedro Felipe Valencia:**
+**Cleo Miller:**
+
+## Usage:
+
+## Credits:
+
+### Contributors:
 
 - Amara Briquelet
 - Mark Homchik
 - Pedro Felipe Valencia 
-- Cleo Miller 
-## Wireframe:
+- Cleo Miller
 
-![Kanye Weather img 1](./assets/images/Kanye%20wirefraame%20pg1.png)
-![Kanye Weather img 2](./assets/images/Kanye%20wireframe%20pg2.png)
+### API Used:
+
+- [OpenWeather](https://openweathermap.org/forecast5#geo5)
+
+- [kanye.rest](https://kanye.rest/)
+
+## License:
+
+
+
