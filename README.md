@@ -13,9 +13,8 @@ SO I will be armed with the necessary information to prepare myself and my belon
 
 - Amara Briquelet
 - Mark Homchik
-- Pedro Felipe Valencia
-
-
+- Pedro Felipe Valencia 
+- Cleo Miller 
 ## Wireframe:
 
 ![Kanye Weather img 1](./assets/images/Kanye%20wirefraame%20pg1.png)
