@@ -10,7 +10,7 @@ Additional things that can be added upon the swift completion of a MVP:
 
 ## User Story:
 
-AS A resident of city X I would like to have a weather app that reminds me to check it daily and rewards me with a new Kanye quote when opened.
+AS A resident of city X I would like to have a weather app that gives me the current weather where I am located and rewards me with a new and random Kanye quote when opened.
 So I can remain safe by being aware of incoming bad weather.
 
 ## Contributors:
