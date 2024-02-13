@@ -109,15 +109,22 @@ function getRandomKanyeQuote() {   // new function to get random kanye quote at 
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    if (typeof(Storage) !== "undefined") {
-
+        //count starts at 0
         let pageLoadCount = localStorage.getItem('pageLoadCount') || 0;
-
+        //add load count for every refresh
         pageLoadCount++;
-
+        // put page load count into text
         document.getElementById('loadCount').textContent = `This page has been loaded ${pageLoadCount} times.`;
-
+        
         localStorage.setItem('pageLoadCount', pageLoadCount);
+
+        // Add event listener for the reset button
+        document.getElementById('resetButton').addEventListener('click', function () {
+            // Reset the count to 0
+            localStorage.setItem('pageLoadCount', 0);
+
+             // Update the displayed count
+             document.getElementById('loadCount').textContent = 'Page load count has been reset.';
             } 
-    }
-)
+    
+)})
