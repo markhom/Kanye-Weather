@@ -18,8 +18,10 @@ SO I will be armed with the necessary information to prepare myself and my belon
 
 <p style="text-align:center; border-bottom: 1px #95a5a6 solid; font-weight:500; margin:10px 100px 10px 100px; font-size:20px">Why we chose this project and what we learned :</p>
 
-- **Amara Briquelet:** I thought it would be fun to make an app that mixes an extremely useful API with one that is purely for entertainment purposes.
-
+- **Amara Briquelet:** I thought it would be fun to make an app that mixes an extremely useful API with one that is purely for entertainment purposes. 
+My main takeaways from working on this project:
+- Don't get feature happy unless MVP is achieved early, if a functionality can be added without adding an extra API do it without adding it to avoid inconsistent results. 
+- How to coordinate with other devs on a team. 
 - **Mark Homchik:**
 - **Pedro Felipe Valencia:**
 - **Cleo Miller:**
