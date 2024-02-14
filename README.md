@@ -26,7 +26,10 @@ My main takeaways from working on this project:
 My main takeaways and things I learned:
 - Ask questions. A lot of them, if you can't figure something out the best possible thing to do is to ask questions.
 - Learned how to communicate productively even when everyone is far away or has different time zones
-- **Pedro Felipe Valencia:**
+- **Pedro Felipe Valencia:** Working on a project that gives a taste of an actual programming collaboration was a great experience for what lies ahead.
+- My main takeaways from this project:
+- Collaborating with others in programming is immensely important.
+- There's an immense amount of support online, learning how to navigate through the support channels is a game changer.
 - **Cleo Miller:**
 
 ## Usage:
