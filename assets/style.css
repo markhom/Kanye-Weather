@@ -9,30 +9,26 @@
             max-width: 80%;
         }
      */
-        /* Custom colors inspired by Kanye's "Donda" album */
-        :root {
-            --donda-red: #ea4c5a;
-            --donda-yellow: #f1c40f;
-            --donda-blue: #3498db;
-            --donda-green: #2ecc71;
-            --donda-gray: #95a5a6;
-        }
+/* Custom colors inspired by Kanye's "Donda" album */
+:root {
+    --donda-red: #ea4c5a;
+    --donda-yellow: #f1c40f;
+    --donda-blue: #3498db;
+    --donda-green: #2ecc71;
+    --donda-gray: #95a5a6;
+}
 
-        /* Apply custom colors to Bulma elements */
-        .modal-content,
-        .modal-background,
-        .modal-close,
-        .button.is-danger.is-primary {
-            background-color: var(--donda-red);
-            color: #fff;   
-        }
+/* Apply custom colors to Bulma elements */
+.modal-content,
+.modal-background,
+.modal-close,
+.button.is-danger.is-primary {
+    background-color: var(--donda-red);
+    color: #fff;
+}
 
-        .title {
-            color: var(--donda-red);
-        }
+.title {
+    color: var(--donda-red);
+}
 
-        /* Add any additional styling as needed */
-    
-       
-
-    
+/* Add any additional styling as needed */

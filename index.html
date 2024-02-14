@@ -7,7 +7,8 @@
     <title>Kanye Weather</title>
     <style>
         body {
-            font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue or a similar bold font */
+            font-family: 'Bebas Neue', sans-serif;
+            /* Use Bebas Neue or a similar bold font */
             text-align: center;
             margin: 0;
             padding: 0;
@@ -17,27 +18,42 @@
             justify-content: center;
             align-items: center;
         }
-        h1, h2, p, li, a, button {
-            font-family: 'Bebas Neue', sans-serif; /* Apply the font to all relevant elements */
+
+        h1,
+        h2,
+        p,
+        li,
+        a,
+        button {
+            font-family: 'Bebas Neue', sans-serif;
+            /* Apply the font to all relevant elements */
         }
+
         h1 {
             margin-bottom: 20px;
         }
+
         section {
             margin-bottom: 20px;
         }
-        #kanye, #startContainer {
+
+        #kanye,
+        #startContainer {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         #startContainer {
             margin-top: 20px;
         }
+
         #resetButton {
             margin-top: 20px;
         }
-        #resetMessage, #loadCount {
+
+        #resetMessage,
+        #loadCount {
             margin: 0;
         }
     </style>
@@ -57,17 +73,17 @@
 
     <div id="kanye" style="display: none;">
         <!-- randomize Kanye quote -->
-        <input type="button" onclick="getRandomKanyeQuote()" value="ye... inspire me">
+        <input type="button" class="button is-danger" onclick="getRandomKanyeQuote()" value="ye... inspire me">
         <p id="quoteContainer"></p>
         <!-- temp div to see and style the quote and weather, working on icon and need input for how this should look so I know what types of weather data we want and how we want that conveyed to the user -->
         <section>
             <ul>
-                <li id="iconPic"><img id="theMap" src="" alt="Weather icon that depicts the current weather in your location"> </li>
+                <li id="iconPic"><img id="theMap" src=""
+                        alt="Weather icon that depicts the current weather in your location"> </li>
                 <li id="temperature">Temperature in F:</li>
                 <li id="realFeel">Real Feel:</li>
                 <li id="weatherConditions">Weather Conditions:</li>
                 <li id="precipitation">Precipitation:</li>
-                <li id="visibility">Visibility:</li>
                 <li id="humidity">Humidity:</li>
             </ul>
         </section>
@@ -103,7 +119,7 @@
                         <div class="content">
                             <p>
                                 <strong>Okay, okay, okay, okay, okay, okay !</strong> <small>That Part </small>
-                                <br>Thanks for using the Weather App inspired by Kanye ! 
+                                <br>Thanks for using the Weather App inspired by Kanye !
                             </p>
                         </div>
                         <nav class="level">
@@ -122,7 +138,7 @@
     <script src="assets/script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            if (typeof(Storage) !== "undefined") {
+            if (typeof (Storage) !== "undefined") {
                 let pageLoadCount = localStorage.getItem('pageLoadCount') || 0;
                 document.getElementById('counter').textContent = pageLoadCount;
 
@@ -131,7 +147,7 @@
                     document.getElementById('counter').textContent = 0;
                     document.getElementById('resetMessage').textContent = 'Page load count has been reset.';
                 });
-            } 
+            }
         });
     </script>
 </body>

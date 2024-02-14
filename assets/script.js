@@ -40,13 +40,12 @@ function fetchWeather(vertical, horizontal) {
     fetch(weatherUrl)
         .then(response => response.json())
         .then(data => {
-            const weatherData = data.list[0]; 
+            const weatherData = data.list[0];
             console.log(weatherData); //CHECK FOR THIS TO MAKE SURE COORDS ARE SUMMONING API INFO FOR YOU. 
             document.getElementById('temperature').textContent = `Temperature: ${weatherData.main.temp}°F`;
             document.getElementById('realFeel').textContent = `Real Feel: ${weatherData.main.feels_like}°F`;
             document.getElementById('weatherConditions').textContent = `Weather Conditions: ${weatherData.weather[0].description}`;
             document.getElementById('precipitation').textContent = `Precipitation: ${weatherData.clouds.all}%`;
-            document.getElementById('visibility').textContent = `Visibility: ${weatherData.visibility}m`;
             document.getElementById('humidity').textContent = `Humidity: ${weatherData.main.humidity}%`;
 
             addMap(weatherData);
@@ -88,7 +87,7 @@ $(document).ready(function () {
 });
 
 function getRandomKanyeQuote() {   // new function to get random kanye quote at click
-     
+
     quoteGenerator().then((quotes) => {  // calling quote generator function
         if (quotes.length > 0) {
 
@@ -105,25 +104,26 @@ function getRandomKanyeQuote() {   // new function to get random kanye quote at 
 
 
 document.addEventListener('DOMContentLoaded', function () {
-        //count starts at 0
-        let pageLoadCount = localStorage.getItem('pageLoadCount') || 0;
-        //add load count for every refresh
-        pageLoadCount++;
-        // put page load count into text
-        document.getElementById('loadCount').textContent = `This page has been loaded ${pageLoadCount} times.`;
-        
-        localStorage.setItem('pageLoadCount', pageLoadCount);
+    //count starts at 0
+    let pageLoadCount = localStorage.getItem('pageLoadCount') || 0;
+    //add load count for every refresh
+    pageLoadCount++;
+    // put page load count into text
+    document.getElementById('loadCount').textContent = `This page has been loaded ${pageLoadCount} times.`;
 
-        // Add event listener for the reset button
-        document.getElementById('resetButton').addEventListener('click', function () {
-            // Reset the count to 0
-            localStorage.setItem('pageLoadCount', 0);
+    localStorage.setItem('pageLoadCount', pageLoadCount);
 
-             // Update the displayed count
-             document.getElementById('loadCount').textContent = 'Page load count has been reset.';
-            } 
-    
-)})
+    // Add event listener for the reset button
+    document.getElementById('resetButton').addEventListener('click', function () {
+        // Reset the count to 0
+        localStorage.setItem('pageLoadCount', 0);
+
+        // Update the displayed count
+        document.getElementById('loadCount').textContent = 'Page load count has been reset.';
+    }
+
+    )
+})
 
 
 
