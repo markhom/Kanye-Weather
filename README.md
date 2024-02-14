@@ -95,6 +95,10 @@ My main takeaways and things I learned:
 <p align="center"><a href="https://openweathermap.org/forecast5#geo5">OpenWeather</a> </p>
 <p align="center"><a href="https://kanye.rest/">kanye.rest</a> </p>
 
+## Links: 
+- Github repository link: https://github.com/markhom/Kanye-Weather.git 
+- Deployed program link: https://markhom.github.io/Kanye-Weather/ 
+
 ### License:
 
 
