@@ -46,7 +46,6 @@ function fetchWeather(vertical, horizontal) {
             document.getElementById('realFeel').textContent = `Real Feel: ${weatherData.main.feels_like}°F`;
             document.getElementById('weatherConditions').textContent = `Weather Conditions: ${weatherData.weather[0].description}`;
             document.getElementById('precipitation').textContent = `Precipitation: ${weatherData.clouds.all}%`;
-            document.getElementById('visibility').textContent = `Visibility: ${weatherData.visibility}`;
             document.getElementById('humidity').textContent = `Humidity: ${weatherData.main.humidity}%`;
 
             addMap(weatherData);
