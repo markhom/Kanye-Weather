@@ -45,11 +45,12 @@ My main takeaways and things I learned:
   <img src="assets\images\README2.png" />
 </p>
 
-3. Admire modal:
+3. Admire modal (Allow app access to your location when prompted):
  <br>
 
  <p align="center">
   <img src="assets\images\README3.PNG" />
+
 </p>
 
 4. Exit modal:
@@ -79,7 +80,9 @@ My main takeaways and things I learned:
   <img src="assets\images\README7.PNG"/>
 </p>
 
+### Directions for Future Development:
 
+- Replace getcurrentlocation with a search bar (preferably one with autocomplete that can pull cities with the same name in different countries/states) that allows the user to look up the weather anywhere in the world. 
 
 
 ## Credits:
